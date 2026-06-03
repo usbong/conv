@@ -31,7 +31,7 @@ TODO: -verify parameter put in `toFixed(...)`;<br/>
 
 <img src="https://github.com/usbong/conv/blob/main/screenshots/convScreenshotAndroidV20260529T1557.png" width="30%">
 
-5. 20260530 (CURRENT); http://store.usbong.ph/server/conv/conv.html<br/>
+5. 20260530; http://store.usbong.ph/server/conv/conv20260530.html<br/>
 +fixed: more than one decimal point could be entered per input box<br/>
 +fixed: kg and pound are for Mass; while foot and cm are for Length<br/>
 +added: "lbs" in the label for pound, so that it's now "Pound (lbs)";<br/>
@@ -39,6 +39,10 @@ TODO: -verify parameter put in `toFixed(...)`;<br/>
 +added: "Demo Version. Please report for any errors."; report links to the github page;<br/>
 +updated: default unit to measure to be `Mass` instead of `Length`;<br/>
 +updated: increased font size of disclaimer when app is accessed via Android;<br/>
+
+5. 20260603 (CURRENT); http://store.usbong.ph/server/conv/conv.html<br/>
++fixed: when certain non-numbers keys are entered, the cursor moves to the right-most; it now stays in the same position;<br/>
++updated: icon<br/>
 
 # Get PhilNITS Certified!
 
