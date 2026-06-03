@@ -26,7 +26,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-	<link rel="icon" type="image/x-icon" href="./assets/images/convalphaicon.png">
+	<link rel="icon" type="image/x-icon" href="./assets/images/convalphaicon20260603.png">
   </head>
 
   <title>
@@ -659,7 +659,23 @@
 					//no need to update the input text
 					event.preventDefault(); 
 				}
+				
+				//added by Mike, 20260603
+				return;
 			}
+
+			//added by Mike, 20260603
+			//---------------------------------------
+			//Reference: Google AI Overview
+			// 1. Allow control keys (Backspace, Tab, Delete, Arrows, etc.)
+			if (event.key.length > 1) {
+				return;
+			}
+			// 2. Block the key if it is NOT a number between 0 and 9
+			if (!/[0-9]/.test(event.key)) {
+				event.preventDefault();
+			}
+			//---------------------------------------
 		});
 
 		//added by Mike, 20260530
@@ -671,7 +687,23 @@
 					//no need to update the input text
 					event.preventDefault(); 
 				}
+
+				//added by Mike, 20260603
+				return;
 			}
+
+			//added by Mike, 20260603
+			//---------------------------------------
+			//Reference: Google AI Overview
+			// 1. Allow control keys (Backspace, Tab, Delete, Arrows, etc.)
+			if (event.key.length > 1) {
+				return;
+			}
+			// 2. Block the key if it is NOT a number between 0 and 9
+			if (!/[0-9]/.test(event.key)) {
+				event.preventDefault();
+			}
+			//---------------------------------------
 		});
 			
 		if (/Mobile|Android|webOS|iPhone|iPad|iPod|AppleWebKit|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
